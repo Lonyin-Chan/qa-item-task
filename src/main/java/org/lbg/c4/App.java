@@ -1,8 +1,9 @@
 package org.lbg.c4;
 
-import java.sql.SQLOutput;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 /**
@@ -13,16 +14,16 @@ public class App {
     static double totalCost = 0;
     private static final DecimalFormat decfor = new DecimalFormat("0.00");
 
-    private static double[] itemPrices = new double[0];
+    private static ArrayList<Double> itemPrices = new ArrayList<>();
     public static void main(String[] args){
 
         try {
             Scanner myScanner = new Scanner(System.in);
+            String input = "";
 
             System.out.println("Enter VAT rate");
-
             double vat = Double.parseDouble(myScanner.nextLine());
-            String input = "";
+
             while (true) {
                 System.out.println("Enter item cost or quit (Enter QUIT): ");
                 input = myScanner.nextLine();
@@ -41,24 +42,20 @@ public class App {
         catch (Exception e) {
             System.out.println(e);
         }
-        Arrays.sort(itemPrices);
 
         System.out.println("Final total cost is: £" + decfor.format(totalCost));
-//        System.out.println(Arrays.toString(itemPrices));
+        Collections.sort(itemPrices);
         printPrices();
     }
 
     public static void printPrices() {
-        for (int i = 0; i < itemPrices.length; i++) {
-            System.out.println("Item " + (i + 1) + " costs: £" + decfor.format(itemPrices[i]));
+        for (int i = 0; i < itemPrices.size(); i++) {
+            System.out.println("Item " + (i + 1) + " costs: £" + decfor.format(itemPrices.get(i)));
         }
     }
 
     public static void addToArray(double price) {
-        double[] newList;
-        newList = Arrays.copyOf(itemPrices, itemPrices.length + 1);
-        newList[newList.length - 1] = price;
-        itemPrices = newList;
+        itemPrices.add(price);
     }
 
     public static double totalPrice(double cost, double vat) {
