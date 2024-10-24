@@ -2,73 +2,59 @@ package org.lbg.c4;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
-/**
- * Hello world!
- */
 public class App {
-
     static double totalCost = 0;
-    private static final DecimalFormat decfor = new DecimalFormat("0.00");
+    private final DecimalFormat decfor = new DecimalFormat("0.00");
+    private ArrayList<Item> items = new ArrayList<>();
 
-    private static ArrayList<Item> items = new ArrayList<>();
-    public static void main(String[] args){
-        Scanner myScanner = new Scanner(System.in);
-        String itemCost = "";
-        String itemQuantity = "";
+    public static void main(String[] args) {
+        App app = new App();
+        app.inputLogic();
+    }
 
-        try {
-            System.out.println("Enter VAT rate");
+    public void inputLogic() {
+        try (Scanner myScanner = new Scanner(System.in)) {
+            System.out.println("Enter VAT rate:");
             double vat = Double.parseDouble(myScanner.nextLine());
 
             while (true) {
-                System.out.println("Enter item cost or quit (Enter QUIT): ");
-                itemCost = myScanner.nextLine();
-                if (itemCost.isEmpty()) {
-                    continue;
-                }
-                if (itemCost.equals("QUIT")) {
+                String itemCost = getUserInput(myScanner, "Enter item cost or quit (Enter QUIT): ");
+                if (itemCost.equalsIgnoreCase("QUIT")) {
                     break;
                 }
 
-                System.out.println("Enter item quantity or quit (Enter QUIT): ");
-                itemQuantity = myScanner.nextLine();
-                if (itemQuantity.isEmpty()) {
-                    continue;
-                }
-                if (itemQuantity.equals("QUIT")) {
+                String itemQuantity = getUserInput(myScanner, "Enter item quantity or quit (Enter QUIT): ");
+                if (itemQuantity.equalsIgnoreCase("QUIT")) {
                     break;
                 }
-               
+
                 processItem(Double.parseDouble(itemCost), Integer.parseInt(itemQuantity), vat);
                 System.out.println("Current total cost: £" + decfor.format(totalCost));
             }
-            myScanner.close();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println(e);
         }
         printResult();
     }
 
-    public static void printResult() {
-        System.out.println("Final total cost is: £" + decfor.format(totalCost));
-        printPrices();
+    private String getUserInput(Scanner scanner, String prompt) {
+        System.out.println(prompt);
+        String input = scanner.nextLine().trim();
+        return input.isEmpty() ? getUserInput(scanner, prompt) : input;
     }
 
-    public static void printPrices() {
+    private void printResult() {
+        System.out.println("Final total cost is: £" + decfor.format(totalCost));
         for (int i = 0; i < items.size(); i++) {
             System.out.println("Item " + (i + 1) + " costs: £" + decfor.format(items.get(i).getTotalPrice()));
         }
     }
 
-    public static void processItem(double cost, int quantity, double vat) {
+    private void processItem(double cost, int quantity, double vat) {
         Item newItem = new Item(cost, quantity, vat);
         items.add(newItem);
-
         totalCost += newItem.getTotalPrice();
     }
 }
