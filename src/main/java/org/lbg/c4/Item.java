@@ -1,17 +1,27 @@
 package org.lbg.c4;
 
-public class Item {
-    public double cost;
-    public int quantity;
-    public double vat;
+import java.text.DecimalFormat;
 
-    public Item(double cost, int quantity, double vat) {
+public class Item {
+    public String cost;
+    public String quantity;
+    public String vat;
+
+    private final DecimalFormat decfor = new DecimalFormat("0.00");
+
+
+    public Item(String cost, String quantity, String vat) {
         this.cost = cost;
         this.quantity = quantity;
         this.vat = vat;
     }
 
     public double getTotalPrice() {
-        return cost * (1+vat) * quantity;
+        return Double.parseDouble(cost) * (1+Double.parseDouble(vat)) * Integer.parseInt(quantity);
     }
+
+    public String toString() {
+        return "Item total cost: £" + decfor.format(getTotalPrice());
+    }
+
 }
