@@ -11,13 +11,12 @@ public class Runner {
     }
 
     public  ArrayList<Item>    run() {
+        int itemNo = 0;
         String lineRead = "";
-
         ArrayList<String> itemParams = new ArrayList<>(3);
-        ArrayList<Item> items = new ArrayList(10);
+        ArrayList<Item> items = new ArrayList<>(10);
 
-        exitApp:
-        while (lineRead != null) {
+        exitApp: while (true) {
             for (var reader : itsReaders) {
                 lineRead = reader.readFromKeyboard(System.in);
                 if (lineRead.equalsIgnoreCase("QUIT")) {
@@ -25,11 +24,10 @@ public class Runner {
                 }
                 itemParams.add(lineRead);
             }
-            Item item = new Item(itemParams.get(0), itemParams.get(1), itemParams.get(2));
-            items.add(item);
+            items.add(new Item(++itemNo, Double.parseDouble(itemParams.get(0)),
+                    Integer.parseInt(itemParams.get(1)), Double.parseDouble(itemParams.get(2))));
             itemParams.clear();
         }
-
         return items;
     }
 }

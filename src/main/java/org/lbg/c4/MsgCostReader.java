@@ -10,22 +10,20 @@ public class MsgCostReader extends MsgReader implements IElementReader{
     }
 
     @Override
-    public  String readFromKeyboard( InputStream is )
-    {
+    public  String readFromKeyboard( InputStream is ) {
         Scanner theScanner = new Scanner( is );
         String cost = "";
-
         do {
             itsPrompt.prompt("Enter the item cost (Double):");
             cost = theScanner.nextLine();
-        } while (!isDouble(cost));
-
+        } while (!isValid(cost));
         return cost;
     }
 
-    private boolean isDouble(String str) {
+    @Override
+    public boolean isValid(String str) {
         try {
-            if (str.equals("QUIT")) return true;
+            if (str.equalsIgnoreCase("QUIT")) return true;
             Double.parseDouble(str);
             return true;
         } catch(NumberFormatException e){

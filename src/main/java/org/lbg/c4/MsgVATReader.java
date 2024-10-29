@@ -12,18 +12,17 @@ public class MsgVATReader extends MsgReader implements IElementReader {
     public String readFromKeyboard(InputStream is) {
         Scanner theScanner = new Scanner(is);
         String vat = "";
-
         do {
             itsPrompt.prompt("Enter the VAT (Double):");
             vat = theScanner.nextLine();
-        } while(!isDouble(vat));
-
+        } while(!isValid(vat));
         return vat;
     }
 
-    private boolean isDouble(String str) {
+    @Override
+    public boolean isValid(String str) {
         try {
-            if (str.equals("QUIT")) return true;
+            if (str.equalsIgnoreCase("QUIT")) return true;
             Double.parseDouble(str);
             return true;
         } catch(NumberFormatException e){

@@ -16,14 +16,14 @@ public class MsgQuantityReader extends MsgReader implements IElementReader{
         do {
             itsPrompt.prompt("Enter the quantity (Int):");
             quantity = theScanner.nextLine();
-        } while (!isInt(quantity));
-
+        } while (!isValid(quantity));
         return quantity;
     }
 
-    private boolean isInt(String str) {
+    @Override
+    public boolean isValid(String str) {
         try {
-            if (str.equals("QUIT")) return true;
+            if (str.equalsIgnoreCase("QUIT")) return true;
             Integer.parseInt(str);
             return true;
         } catch(NumberFormatException e){
