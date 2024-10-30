@@ -1,5 +1,7 @@
 package org.lbg.c4;
 
+import org.lbg.shop.BankAccount;
+
 import java.util.ArrayList;
 
 public class App {

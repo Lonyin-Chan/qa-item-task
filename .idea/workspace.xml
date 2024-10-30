@@ -5,18 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a89b7c4e-2188-4485-b9ab-7ac1c19e4501" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lbg/c4/BankAccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lbg/c4/CalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/Basket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/Session.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/lbg/shop/BasketTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/lbg/shop/ItemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/lbg/shop/SessionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/IElementReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/IElementReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/MsgCostReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/MsgCostReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/MsgQuantityReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/MsgQuantityReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/MsgVATReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/MsgVATReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/BankAccount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lbg/c4/BankAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lbg/shop/BankAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -43,22 +43,84 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/work/git/qa-item-task",
-    "settings.editor.selected.configurable": "editor.preferences.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/work/git/qa-item-task&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.appearance&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.CalculatorTest">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.lbg.shop" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.lbg.shop" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.BasketTest.verify_basket_copy_works">
+    <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sales_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lbg.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lbg.shop" />
+      <option name="MAIN_CLASS_NAME" value="org.lbg.shop.BankAccountTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sales_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lbg.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lbg.shop" />
+      <option name="MAIN_CLASS_NAME" value="org.lbg.shop.BasketTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasketTest.verify_basket_copy_works" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sales_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lbg.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lbg.shop" />
+      <option name="MAIN_CLASS_NAME" value="org.lbg.shop.BasketTest" />
+      <option name="METHOD_NAME" value="verify_basket_copy_works" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sales_app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lbg.c4.*" />
+          <option name="PATTERN" value="org.lbg.shop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,90 +131,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest.onAdd_negative_verify_balance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sales_app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lbg.c4.*" />
+          <option name="PATTERN" value="org.lbg.shop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.lbg.c4" />
-      <option name="MAIN_CLASS_NAME" value="org.lbg.c4.CalculatorTest" />
-      <option name="METHOD_NAME" value="onAdd_negative_verify_balance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.onDivide_negative_result_verify_balance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sales_app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.lbg.c4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.lbg.c4" />
-      <option name="MAIN_CLASS_NAME" value="org.lbg.c4.CalculatorTest" />
-      <option name="METHOD_NAME" value="onDivide_negative_result_verify_balance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.onMultiply_negative_result_verify_balance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sales_app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.lbg.c4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.lbg.c4" />
-      <option name="MAIN_CLASS_NAME" value="org.lbg.c4.CalculatorTest" />
-      <option name="METHOD_NAME" value="onMultiply_negative_result_verify_balance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculatorTest.onSubtract_negative_result_verify_balance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sales_app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.lbg.c4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.lbg.c4" />
-      <option name="MAIN_CLASS_NAME" value="org.lbg.c4.CalculatorTest" />
-      <option name="METHOD_NAME" value="onSubtract_negative_result_verify_balance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="sales_app" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="sales_app" />
-      <option name="filePath" />
+      <option name="PACKAGE_NAME" value="org.lbg.shop" />
+      <option name="MAIN_CLASS_NAME" value="org.lbg.shop.ItemTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BasketTest.verify_basket_copy_works" />
+        <item itemvalue="JUnit.BasketTest" />
+        <item itemvalue="JUnit.ItemTest" />
+        <item itemvalue="JUnit.BankAccountTest" />
         <item itemvalue="JUnit.CalculatorTest" />
-        <item itemvalue="JUnit.CalculatorTest.onDivide_negative_result_verify_balance" />
-        <item itemvalue="JUnit.CalculatorTest.onMultiply_negative_result_verify_balance" />
-        <item itemvalue="JUnit.CalculatorTest.onSubtract_negative_result_verify_balance" />
-        <item itemvalue="JUnit.CalculatorTest.onAdd_negative_verify_balance" />
       </list>
     </recent_temporary>
   </component>
