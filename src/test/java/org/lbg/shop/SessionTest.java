@@ -82,6 +82,32 @@ class SessionTest
         assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void verify_if_last_item_correct()
+    {
+        // arrange
+        Item  item = new Item("Spinach", 1, 1.27); // 1.27
+        ObjectMapper objectMapper = new ObjectMapper();
+        String expectedResult = "";
+        try
+        {
+            expectedResult = objectMapper.writeValueAsString(item);
+        } catch (JsonProcessingException e)
+        {
+            e.printStackTrace();
+        }
+        IDataStore dataStore = mock(IDataStore.class);
+        when(dataStore.getLastItemSoldInDB()).thenReturn(item);
+        Session cut = new Session(dataStore);
+
+        // act
+        String actualResult = cut.getTheLastItemSold();
+
+        // assert
+        assertEquals(expectedResult, actualResult);
+        verify(dataStore, times(1)).getLastItemSoldInDB();
+    }
+
     interface IRegister {
         String getDelegate(int idx);
 

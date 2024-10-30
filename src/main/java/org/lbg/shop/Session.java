@@ -41,4 +41,19 @@ public class Session
         }
         return result;
     }
+
+    public String getTheLastItemSold() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        Item lastItemSold = dataStore.getLastItemSoldInDB();
+        String result = "";
+        try
+        {
+            result = objectMapper.writeValueAsString(lastItemSold);
+        } catch (JsonProcessingException e)
+        {
+            e.printStackTrace();
+        }
+        return result;
+    }
+
 }
