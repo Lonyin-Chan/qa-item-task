@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a89b7c4e-2188-4485-b9ab-7ac1c19e4501" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/HighestNumberFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/HighestNumberFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tdd/HighestNumberFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tdd/HighestNumberFinderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,6 +160,6 @@
     <SUITE FILE_PATH="coverage/qa_item_task$BankAccountTest.ic" NAME="BankAccountTest Coverage Results" MODIFIED="1730214140507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.lbg.c4.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/qa_item_task$tdd_in_sales_app.ic" NAME="tdd in sales_app Coverage Results" MODIFIED="1730307034973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/qa_item_task$tdd_in_sales_app.ic" NAME="tdd in sales_app Coverage Results" MODIFIED="1730307352536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
