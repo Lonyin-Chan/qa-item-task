@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a89b7c4e-2188-4485-b9ab-7ac1c19e4501" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/Basket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lbg/shop/BasketTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lbg/shop/ItemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lbg/shop/SessionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/DataStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/IDataStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lbg/c4/BankAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lbg/shop/BankAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/shop/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/Session.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lbg/shop/SessionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lbg/shop/SessionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +64,7 @@
       <recent name="org.lbg.shop" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BasketTest.verify_basket_copy_works">
+  <component name="RunManager" selected="JUnit.SessionTest">
     <configuration name="BankAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sales_app" />
       <extension name="coverage">
@@ -116,21 +111,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CalculatorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="sales_app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.lbg.shop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.lbg.c4" />
-      <option name="MAIN_CLASS_NAME" value="org.lbg.c4.CalculatorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sales_app" />
       <extension name="coverage">
@@ -146,13 +126,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sales_app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lbg.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lbg.shop" />
+      <option name="MAIN_CLASS_NAME" value="org.lbg.shop.SessionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SessionTest" />
         <item itemvalue="JUnit.BasketTest.verify_basket_copy_works" />
         <item itemvalue="JUnit.BasketTest" />
         <item itemvalue="JUnit.ItemTest" />
         <item itemvalue="JUnit.BankAccountTest" />
-        <item itemvalue="JUnit.CalculatorTest" />
       </list>
     </recent_temporary>
   </component>
