@@ -7,7 +7,7 @@ import org.mockito.Mock;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -50,6 +50,27 @@ public class MsgCostReaderTest {
         String actualResult = cut.readFromKeyboard(System.in);
 
         assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void isValid_input_valid_value() {
+        boolean actualResult = cut.isValid("22.0");
+
+        assertTrue(actualResult);
+    }
+
+    @Test
+    public void isValid_input_invalid_value() {
+        boolean actualResult = cut.isValid("cheese");
+
+        assertFalse(actualResult);
+    }
+
+    @Test
+    public void isValid_input_quit_value() {
+        boolean actualResult = cut.isValid("QUIT");
+
+        assertTrue(actualResult);
     }
 
 }
