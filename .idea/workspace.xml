@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a89b7c4e-2188-4485-b9ab-7ac1c19e4501" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tdd/HighestNumberFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tdd/HighestNumberFinder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tdd/HighestNumberFinderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tdd/HighestNumberFinderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +64,7 @@
       <recent name="org.lbg.shop" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HighestNumberFinderTest">
+  <component name="RunManager" selected="JUnit.HighestNumberFinderTest.find_highest_in_empty_array">
     <configuration name="HighestNumberFinderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sales_app" />
       <extension name="coverage">
@@ -95,17 +96,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SessionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HighestNumberFinderTest.find_highest_in_empty_array" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sales_app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.lbg.shop.*" />
+          <option name="PATTERN" value="tdd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.lbg.shop" />
-      <option name="MAIN_CLASS_NAME" value="org.lbg.shop.SessionTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="tdd" />
+      <option name="MAIN_CLASS_NAME" value="tdd.HighestNumberFinderTest" />
+      <option name="METHOD_NAME" value="find_highest_in_empty_array" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HighestNumberFinderTest.find_highest_in_empty_array" />
         <item itemvalue="JUnit.HighestNumberFinderTest" />
         <item itemvalue="JUnit.HighestNumberFinderTest.find_highest_in_array_if_two_are_equal" />
         <item itemvalue="JUnit.tdd in sales_app" />
         <item itemvalue="JUnit.SessionTest.verify_if_last_item_correct" />
-        <item itemvalue="JUnit.SessionTest" />
       </list>
     </recent_temporary>
   </component>
