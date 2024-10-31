@@ -19,4 +19,14 @@ public class ItemTest {
         assertEquals(expectedResult1, actualResult1);
         assertEquals(expectedResult2, actualResult2);
     }
+
+    @Test
+    public void toString_check_correct_format() {
+        Item cut = new Item(1, 32, 4, 0.2);
+        String expectedResult = "Item 1 total cost: £153.60";
+
+        String actualResult = cut.toString();
+
+        assertEquals(expectedResult, actualResult);
+    }
 }
