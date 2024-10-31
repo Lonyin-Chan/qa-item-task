@@ -60,4 +60,18 @@ public class HighestNumberFinderTest {
         // assert
         assertEquals(expectedResult, actualResult);
     }
+
+    @Test
+    public void find_highest_in_array_for_multiple_values() {
+        // arrange
+        int[] input = {4, 5, -8, 3, 11, -21, 6};
+        HighestNumberFinder cut = new HighestNumberFinder();
+        int expectedResult = 11;
+
+        // act
+        int actualResult = cut.findHighestNumber(input);
+
+        // assert
+        assertEquals(expectedResult, actualResult);
+    }
 }
