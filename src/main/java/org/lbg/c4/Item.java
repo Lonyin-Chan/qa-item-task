@@ -13,7 +13,7 @@ public class Item {
 
     public Item(int itemNo, double cost, int quantity, double vat) {
         this.itemNo = itemNo;
-        this.cost = cost;
+        this.cost = Math.abs(cost);
         this.quantity = Math.abs(quantity);
         this.vat = vat;
     }
