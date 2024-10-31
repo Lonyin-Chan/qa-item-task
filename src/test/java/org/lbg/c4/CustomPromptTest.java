@@ -6,6 +6,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CustomPromptTest {
 
@@ -22,5 +23,16 @@ public class CustomPromptTest {
 
             // Assert
             assertEquals(expectedResult, actualResult.toString());
-        }
+
+    }
+
+    @Test
+    public void prompt_test_message_with_null_value() {
+        // Arrange
+        CustomPrompt cut = new CustomPrompt();
+
+        // Act
+        // Assert
+        assertThrows(IllegalArgumentException.class, () -> cut.prompt(null));
+    }
 }

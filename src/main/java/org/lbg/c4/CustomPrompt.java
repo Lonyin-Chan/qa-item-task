@@ -4,6 +4,8 @@ public class CustomPrompt implements ICustomPrompt{
     @Override
     public void prompt( String msg )
     {
-        System.out.print( "[" + msg + "]" );
+        if (msg == null)
+            throw new IllegalArgumentException("Null value is not valid!!!");
+        System.out.print( "[" + msg + "]");
     }
 }

@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a89b7c4e-2188-4485-b9ab-7ac1c19e4501" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lbg/c4/CustomPromptTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/shop/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/CustomPrompt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/CustomPrompt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lbg/c4/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lbg/c4/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lbg/c4/CalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lbg/shop/CalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/lbg/c4/CustomPromptTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lbg/c4/CustomPromptTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
