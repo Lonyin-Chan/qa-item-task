@@ -46,4 +46,18 @@ public class HighestNumberFinderTest {
         // assert
         assertEquals(expectedResult, actualResult);
     }
+
+    @Test
+    public void find_highest_in_array_if_two_are_equal() {
+        // arrange
+        int[] input = {10, 3, 10};
+        HighestNumberFinder cut = new HighestNumberFinder();
+        int expectedResult = 10;
+
+        // act
+        int actualResult = cut.findHighestNumber(input);
+
+        // assert
+        assertEquals(expectedResult, actualResult);
+    }
 }
