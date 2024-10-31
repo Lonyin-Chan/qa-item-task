@@ -42,4 +42,14 @@ public class MsgCostReaderTest {
         assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void readFromKeyboard_quit_input() {
+        String expectedResult = "QUIT";
+        System.setIn(new ByteArrayInputStream("QUIT".getBytes()));
+
+        String actualResult = cut.readFromKeyboard(System.in);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
 }
