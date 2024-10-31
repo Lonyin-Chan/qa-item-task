@@ -82,15 +82,9 @@ public class HighestNumberFinderTest {
         // arrange
         int[] input = {};
         HighestNumberFinder cut = new HighestNumberFinder();
-        Executable expectedResult = () -> {
-            throw new RuntimeException("This is a empty array");
-        };
 
-            // act
-//        int actualResult = cut.findHighestNumber(input);
-
+        // act
         // assert
-
         assertThrows(IllegalArgumentException.class, () -> cut.findHighestNumber(input));
     }
 }

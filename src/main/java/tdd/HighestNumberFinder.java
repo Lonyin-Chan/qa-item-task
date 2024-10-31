@@ -7,7 +7,12 @@ public class HighestNumberFinder {
         if (input.length == 0) {
             throw new IllegalArgumentException("Array is empty");
         }
-        Arrays.sort(input);
-        return input[input.length - 1];
+        int max = input[0];
+        for (int number : input) {
+            if (number > max) {
+                max = number;
+            }
+        }
+        return max;
     }
 }
