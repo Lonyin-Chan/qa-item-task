@@ -15,7 +15,7 @@ public class Item {
         this.itemNo = itemNo;
         this.cost = Math.abs(cost);
         this.quantity = Math.abs(quantity);
-        this.vat = vat;
+        this.vat = Math.abs(vat);
     }
 
     public double getTotalPrice() {

@@ -49,4 +49,14 @@ public class ItemTest {
 
         assertEquals(expectedResult, actualResult);
     }
+
+    @Test
+    public void getTotalPrice_negative_vat() {
+        Item cut = new Item(1, 32, 4, -0.2);
+        double expectedResult = 153.6;
+
+        double actualResult = cut.getTotalPrice();
+
+        assertEquals(expectedResult, actualResult);
+    }
 }
