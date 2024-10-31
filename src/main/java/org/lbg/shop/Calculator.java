@@ -1,4 +1,4 @@
-package org.lbg.c4;
+package org.lbg.shop;
 
 public class Calculator {
     private double balance;
