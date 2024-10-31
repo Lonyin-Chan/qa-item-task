@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a89b7c4e-2188-4485-b9ab-7ac1c19e4501" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/lbg/c4/ItemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lbg/c4/CustomPrompt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lbg/c4/CustomPrompt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lbg/c4/CustomPromptTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lbg/c4/CustomPromptTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <recent name="org.lbg.shop" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomPromptTest">
+  <component name="RunManager" selected="JUnit.ItemTest">
     <configuration name="CustomPromptTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sales_app" />
       <extension name="coverage">
@@ -127,21 +126,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="tdd in sales_app" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="sales_app" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/tdd" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lbg.c4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.lbg.c4" />
+      <option name="MAIN_CLASS_NAME" value="org.lbg.c4.ItemTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemTest" />
         <item itemvalue="JUnit.CustomPromptTest" />
         <item itemvalue="JUnit.HighestNumberFinderTest" />
         <item itemvalue="JUnit.HighestNumberFinderTest.find_highest_in_empty_array" />
         <item itemvalue="JUnit.HighestNumberFinderTest.find_highest_in_array_if_two_are_equal" />
-        <item itemvalue="JUnit.tdd in sales_app" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +164,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/qa_item_task$BankAccountTest.ic" NAME="BankAccountTest Coverage Results" MODIFIED="1730214140507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.lbg.c4.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/qa_item_task$CustomPromptTest.ic" NAME="CustomPromptTest Coverage Results" MODIFIED="1730381986694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>org.lbg.c4.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/qa_item_task$tdd_in_sales_app.ic" NAME="tdd in sales_app Coverage Results" MODIFIED="1730307352536" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
