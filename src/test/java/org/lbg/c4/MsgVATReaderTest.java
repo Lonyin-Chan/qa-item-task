@@ -6,16 +6,15 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayInputStream;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-
-public class MsgCostReaderTest {
-
-    private MsgCostReader cut;
+public class MsgVATReaderTest {
+    private MsgVATReader cut;
 
     @BeforeEach
     public void setUp() {
         ICustomPrompt customPrompt = new CustomPrompt();
-        cut = new MsgCostReader(customPrompt);
+        cut = new MsgVATReader(customPrompt);
     }
 
     @Test
@@ -69,5 +68,4 @@ public class MsgCostReaderTest {
 
         assertTrue(actualResult);
     }
-
 }
