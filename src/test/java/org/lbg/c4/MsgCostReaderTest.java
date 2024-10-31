@@ -31,4 +31,15 @@ public class MsgCostReaderTest {
         assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void readFromKeyboard_invalid_then_valid_input() {
+        String expectedResult = "22";
+        System.setIn(new ByteArrayInputStream("cheese".getBytes()));
+        System.setIn(new ByteArrayInputStream("22".getBytes()));
+
+        String actualResult = cut.readFromKeyboard(System.in);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
 }
