@@ -14,7 +14,7 @@ public class Item {
     public Item(int itemNo, double cost, int quantity, double vat) {
         this.itemNo = itemNo;
         this.cost = cost;
-        this.quantity = quantity;
+        this.quantity = Math.abs(quantity);
         this.vat = vat;
     }
 
