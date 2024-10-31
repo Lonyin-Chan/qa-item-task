@@ -1,2 +1,34 @@
-package org.lbg.c4;public class MsgCostReaderTest {
+package org.lbg.c4;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+
+import java.io.ByteArrayInputStream;
+import java.util.Scanner;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
+public class MsgCostReaderTest {
+
+    private MsgCostReader cut;
+
+    @BeforeEach
+    public void setUp() {
+        ICustomPrompt customPrompt = new CustomPrompt();
+        cut = new MsgCostReader(customPrompt);
+    }
+
+    @Test
+    public void readFromKeyboard_valid_input() {
+        String expectedResult = "22.0";
+        System.setIn(new ByteArrayInputStream("22.0".getBytes()));
+
+        String actualResult = cut.readFromKeyboard(System.in);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
 }
